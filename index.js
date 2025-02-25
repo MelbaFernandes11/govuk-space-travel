@@ -4,8 +4,8 @@ const express = require('express');
 // Create an instance of express
 const app = express();
 
-// Set the port
-const port = 3000;
+// Set the port using the environment variable, default to 3000
+const port = process.env.PORT || 3000;
 
 // Define a basic route
 app.get('/', (req, res) => {
